@@ -1,0 +1,229 @@
+/* === Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* === Page Layout Grid === */
+body {
+  background-color: #7a5c37;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.page-grid {
+  display: grid;
+  place-items: center;
+}
+
+/* === Container === */
+#formContainer {
+  width: 420px;
+  background-color: #fff;
+  border: 6px solid #1b3b9e;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* === Top Banner Image (HTML-based version) === */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.banner-text h2 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+
+/* === Close Button === */
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* === Form Styling === */
+form {
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #111;
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: calc(100% - 110px);
+  padding: 6px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+section {
+  margin-top: 0.6rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.1);
+  margin-right: 5px;
+}
+
+/* === Center Checkbox Sections === */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+section label {
+  font-weight: normal;
+  text-align: center;
+  width: auto;
+}
+/* === Center Gender Group === */
+.gender-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.gender-group label:first-of-type {
+  font-weight: bold;
+  margin-bottom: 6px;
+  width: auto;
+}
+
+/* === Center the Radio Buttons & Labels === */
+.gender-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.gender-options input[type="radio"] {
+  transform: scale(1.1);
+}
+
+.gender-options label {
+  font-weight: normal;
+}
+
+
+/* === Submit Button === */
+button[type="submit"] {
+  display: block;
+  margin: 1rem auto 0 auto;
+  padding: 8px 20px;
+  background-color: #1b3b9e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #162f7a;
+}
+
+/* === Output Box === */
+#output {
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+/* === Scripture Books Bar === */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  border-top: 2px solid #1b3b9e;
+  padding: 10px 10px;
+  border-radius: 0 0 18px 18px;
+}
+
+footer img {
+  width: 68px;
+  height: 90px;
+  object-fit: cover;
+  border: 2px solid #222;
+  border-radius: 5px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+  border-color: #d4af37;
+}
+
+
+
+
+

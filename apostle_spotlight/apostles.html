@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostles Spotlights</title>
+  <style>
+    body {
+      background-color: #E5ECEC;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-image: url("images/christus.webp"); 
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      color: white;
+      width: 85%;
+      max-width: 1000px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+    }
+
+    .apostles-group {
+      display: grid;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* First Presidency row */
+    .first-presidency {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .apostle img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    /* Make President Nelson slightly larger */
+    .president img {
+      width: 110px;
+      height: 110px;
+      border: 5px solid white;
+    }
+
+   .quorum {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    max-width: 600px; /* Keeps rows centered under the title */
+    margin: 0 auto;
+    }
+
+    .last-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+    .apostle img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+    </head>
+    <body>
+  <div class="card">
+    <h1>First Presidency</h1>
+    <div class="first-presidency">
+      <div class="apostle"><img src="images/eyring.webp" alt="Henry B. Eyring"></div>
+      <div class="apostle president"><img src="images/oaks.webp" alt="Dallin H. Oaks"></div>
+      <div class="apostle"><img src="images/christofferson.webp" alt="D.Todd Christofferson"></div>
+    </div>
+
+    <h2>Quorum of the Twelve Apostles</h2>
+    <div class="quorum">
+      <div class="apostle"><img src="images/cook.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/holland.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/uchtdorf.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/rasband.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/anderson.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/bednar.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/renlund.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/gong.webp" alt="Apostle"></div>
+    </div>
+      <div class="quorum last-row">
+      <div class="apostle"><img src="images/stevenson.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/soares.webp" alt="Apostle"></div>
+      <div class="apostle"><img src="images/kearon.webp" alt="Apostle"></div>
+    </div>
+  </div>
+</body>
+</html>

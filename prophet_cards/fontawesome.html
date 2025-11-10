@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo App Post</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-bxU6S8bQzEwq9eX8cOtK1rJgA0v3j5h1zPz+WrWf5M3SmbIt9ku9/9fAM5HOfXhZqDYRM6V6uFjVAFjqJ3f4xg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .post {
+            background-color: white;
+            width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+
+        /* ✅ Add the dot before user-info */
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-info img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        .username {
+            font-weight: bold;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .post-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 15px;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .post-footer i {
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .post-footer div:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <div class="post-header">
+            <div class="user-info">
+                <img src="https://via.placeholder.com/35" alt="User profile">
+                <span class="username">alexajohn</span>
+            </div>
+            <span>20 mins</span>
+        </div>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Sunset" class="post-image">
+        <div class="post-footer">
+            <div><i class="fa-regular fa-comment"></i>125</div>
+            <div><i class="fa-regular fa-heart"></i>852</div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+/* ======== FONT IMPORT ======== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* ======== COLOR & FONT VARIABLES ======== */
+:root {
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A42212;
+  --accent2-color: #FFFFFF;
+
+  --heading-font: "Montserrat", Arial, sans-serif;
+  --paragraph-font: "Roboto", Helvetica, sans-serif;
+
+  --headline-color-on-white: #396E94;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #396E94;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #396E94;
+
+  --nav-link-color: #396E94;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396E94;
+}
+
+/* ======== GLOBAL RESET & TEXT ======== */
+body {
+  background-color: #fcfbfb;
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 960px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  margin: 0;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* ======== NAVIGATION ======== */
+nav {
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 3em;
+  font-size: 1.2em;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 15px;
+  min-width: 120px;
+  transition: background-color .3s ease;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* ======== LOGO ======== */
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
